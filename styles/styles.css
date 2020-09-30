@@ -1,4 +1,13 @@
 /* Global styles */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .content-wrap {
   max-width: 100%;
   width: 85%;
@@ -14,6 +23,13 @@ img {
 /* Header styles  */
 
 .umbrella {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 520px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
