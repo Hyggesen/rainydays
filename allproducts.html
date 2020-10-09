@@ -5,13 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainydays | Men and Women Hiking Jackets</title>
-   
+    <link rel="stylesheet" href="styles/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="https://kit.fontawesome.com/6a3263b456.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/6a3263b456.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -20,13 +23,7 @@
         <img src="images/RainyDays_Logo.png" alt="Logo of Rainy Days" />
       </section>
       <section class="search">
-        <form action="submit.php" method="GET">
-          <input type="Search for products" />
-
-        </form>
-        <div class="search-icon">
-          <i class="fas fa-search"></i>
-        </div>
+        <input type="Search for products" />
         <i class="fas fa-shopping-cart"></i>
       </section>
       <nav>
@@ -42,14 +39,75 @@
     </header>
 
     <main>
-      <section class="banner">
-        <img src="images/mountainmain.png" alt="picture of man on mountain" />
-        <h1>ARE YOU READY TO GET INSPIRED?</h1>
+      <section class="under-navigation">
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <i class="fas fa-arrow-right"></i>
+            <li><a href="allproducts.html">All Products</a></li>
+          </ul>
+        </div>
+
+        <h1>ALL PRODUCTS</h1>
+        <nav>
+          <div class="dropdown">
+            <div class="price">
+              <button>Price</button>
+              <ul>
+                <li><a href="#">0-1000</a></li>
+                <li><a href="#">1000-4000</a></li>
+                <li><a href="#">4000-9000</a></li>
+              </ul>
+            </div>
+
+            <div class="color">
+              <button>Color</button>
+              <ul>
+                <li><a href="#">Red</a></li>
+                <li><a href="#">Black</a></li>
+                <li><a href="#">Yellow</a></li>
+              </ul>
+            </div>
+
+            <div class="brand">
+              <button>Brand</button>
+              <ul>
+                <li><a href="#">Coolest</a></li>
+                <li><a href="#">Affordable</a></li>
+                <li><a href="#">Highest Quality</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <section>
+        <div class="sort">
+          <h3>Sort by:</h3>
+          <button>Price low-high</button>
+          <button>Newest</button>
+        </div>
+      </section>
+
+      <!-- Left side of the page column sort:  -->
+      <section class="left-sort">
+        <h3>
+          We always want the freshest of the freshest, and our newest and most
+          innovating jackets are listed here. Get ready for outdoor activities
+          With these new quality jackets.
+        </h3>
+        <div class="jacket-list">
+          <ul>
+            <li>Rain jackets</li>
+            <li>Hiking jackets</li>
+            <li>Running jackets</li>
+          </ul>
+        </div>
       </section>
 
       <section class="product-list">
-        <h1 class="align-center">Products</h1>
-        <div class="product-container">
+        <h1 class="align-center">AllProducts</h1>
+        <div class="product-container2">
           <!-- First Product -->
           <div class="card">
             <div class="image">
@@ -141,25 +199,8 @@
             <div class="price">499,-</div>
             <a class="details-button" href="productpage.html">Details</a>
           </div>
-        </div>
-      </section>
 
-      <section class="subscribe-banner">
-        <h1>SUBSCRIBE</h1>
-        <h2>TO OUR NEWSLETTER</h2>
-        <form action="submit.php" method="GET">
-          <input type="email" />
-
-        </form>
-    
-        <h2>GET THE BEST OFFERS!</h2>
-      </section>
-<br>
-<br>
-      <section class="product-list">
-        <h1 class="align-center">New Arrivals</h1>
-        <div class="product-container">
-          <!-- SHOW-OFF PRODUCT 1 -->
+          <!-- Ninth product -->
           <div class="card">
             <div class="image">
               <img src="images/yellowjacket.jpeg" />
@@ -169,100 +210,57 @@
             <div class="price">499,-</div>
             <a class="details-button" href="productpage.html">Details</a>
           </div>
+        </div>
+      </section>
 
+      <section class="subscribe-banner">
+        <h1>SUBSCRIBE</h1>
+        <h2>TO OUR NEWSLETTER</h2>
+        <form action="submit.php" method="GET">
+          <input type="email" />
+        </form>
 
-<!-- SHOW-OFF PRODUCT 2 -->
-
-<div class="card">
-  <div class="image">
-    <img src="images/yellowjacket.jpeg" />
-  </div>
-  <div class="title">AMAZING BRAND</div>
-  <div class="text">AMAZING YELLOW JACKET</div>
-  <div class="price">499,-</div>
-  <a class="details-button" href="productpage.html">Details</a>
-</div>
-
-
-<!-- SHOW-OFF PRODUCT 3 -->
-<div class="card">
-  <div class="image">
-    <img src="images/yellowjacket.jpeg" />
-  </div>
-  <div class="title">AMAZING BRAND</div>
-  <div class="text">AMAZING YELLOW JACKET</div>
-  <div class="price">499,-</div>
-  <a class="details-button" href="productpage.html">Details</a>
-</div>
-
-<!-- SHOW-OFF PRODUCT 4 -->
-<div class="card">
-  <div class="image">
-    <img src="images/yellowjacket.jpeg" />
-  </div>
-  <div class="title">AMAZING BRAND</div>
-  <div class="text">AMAZING YELLOW JACKET</div>
-  <div class="price">499,-</div>
-  <a class="details-button" href="productpage.html">Details</a>
-</div>
-
-<BR>
-  <BR>
-  </section>
+        <h2>GET THE BEST OFFERS!</h2>
+      </section>
     </main>
-    
-<footer>
-<section class="footer-banner">
-<h2>Links</h2>
 
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="newarrivals.html">New Arrivals</a></li>
-  <li><a href="allproducts.html">Allproducts</a></li>
-  <li><a href="aboutus.html">About Us</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="customerservice.html">Customer Service</a></li>
-</ul>
+    <footer>
+      <section class="footer-banner">
+        <h2>Links</h2>
 
-<h2>Social</h2>
-<i class="fab fa-facebook-square"></i>
-<i class="fab fa-instagram-square"></i>
-<i class="fab fa-twitter-square"></i>
-<i class="fab fa-linkedin"></i>
-<ul>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="newarrivals.html">New Arrivals</a></li>
+          <li><a href="allproducts.html">Allproducts</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="customerservice.html">Customer Service</a></li>
+        </ul>
 
-  <li>Facebook</li>
-  <li>Instagram</li>
-  <li>Twitter</li>
-  <li>LinkedIn</li>
+        <h2>Social</h2>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>LinkedIn</li>
 
+          <h2>Learn More</h2>
 
-  <h2>Learn More</h2>
+          <li>Support</li>
+          <li>Policy</li>
+          <li>Terms</li>
+          <li>Special Deals</li>
 
-  <li>Support</li>
-  <li>Policy</li>
-  <li>Terms</li>
-  <li>Special Deals</li>
-
-  <h2>Newsletter</h2>
-  <form action="submit.php" method="GET">
-
-    <input type="email" />
-
-  </form>
-
-
-
-</ul>
-
-</section>
-
-
-
-
-</footer>
-
-
-
+          <h2>Newsletter</h2>
+          <form action="submit.php" method="GET">
+            <input type="email" />
+          </form>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>
