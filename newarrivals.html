@@ -41,14 +41,15 @@
     </header>
 
     <main>
-      <div class="breadcrumb">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li><a href="newarrivals.html">New Arrivals</a></li>
-        </ul>
-      </div>
       <section class="under-navigation">
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+          </ul>
+        </div>
+
         <h1>NEW ARRIVALS</h1>
         <nav>
           <div class="dropdown">
@@ -107,7 +108,6 @@
       </section>
 
       <section class="product-list">
-        <h1 class="align-center">New Arrivals</h1>
         <div class="product-container2">
           <!-- First Product -->
           <div class="card">
@@ -215,53 +215,65 @@
       </section>
 
       <section class="subscribe-banner">
-        <h1>SUBSCRIBE</h1>
-        <h2>TO OUR NEWSLETTER</h2>
-        <form action="submit.php" method="GET">
-          <input type="email" />
-        </form>
+        <h2>SUBSCRIBE</h2>
+        <p>TO OUR NEWSLETTER</p>
+        <input type="email" placeholder="Write your email-address here"><input type="submit" value="Subscribe">
 
-        <h2>GET THE BEST OFFERS!</h2>
+        </form>
+    
+        <p>GET THE BEST OFFERS!</p>
       </section>
     </main>
 
-    <footer>
-      <section class="footer-banner">
-        <h2>Links</h2>
+    <footer class="footer">
 
+      <div class="footer-links">
+    
+        
+    
         <ul>
+          <h2>Links</h2>
           <li><a href="index.html">Home</a></li>
           <li><a href="newarrivals.html">New Arrivals</a></li>
-          <li><a href="allproducts.html">Allproducts</a></li>
+          <li><a href="allproducts.html">All products</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="customerservice.html">Customer Service</a></li>
         </ul>
-
-        <h2>Social</h2>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-linkedin"></i>
+    
+        
+        
+    
         <ul>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Twitter</li>
-          <li>LinkedIn</li>
-
-          <h2>Learn More</h2>
-
-          <li>Support</li>
-          <li>Policy</li>
-          <li>Terms</li>
-          <li>Special Deals</li>
-
-          <h2>Newsletter</h2>
-          <form action="submit.php" method="GET">
-            <input type="email" />
-          </form>
-        </ul>
-      </section>
+          <h2>Social</h2>
+          <li> <span><i class="fab fa-facebook-square"></i></span></i>Facebook</li> 
+          <li> <span><i class="fab fa-instagram-square"></i></span></i> Instagram</li>
+          <li><span><i class="fab fa-twitter-square"></i></span></i> Twitter</li>
+          <li><span><i class="fab fa-linkedin"></i></span></i>LinkedIn</li>
+          </ul>
+    
+          <ul>
+            <h2>Learn More</h2>
+            <li>Support</li>
+            <li>Policy</li>
+            <li>Terms</li>
+            <li>Special Deals</li>
+          </ul>
+          
+    
+      </div>
+    
+      <div class="footer-newsletter">
+        <h2>Newsletter</h2>
+        <input type="text" placeholder="Write your email-address here"><input type="submit" value="Subscribe">
+        
+    
+    
+      </div>
+    
+      <div class="footer-address">
+        <p>Raindays AS, Noroffstreet 21 | 5020 TheInternett |Postbox 1337</p>
+      </div>
     </footer>
   </body>
 </html>
