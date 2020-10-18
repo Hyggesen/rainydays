@@ -194,7 +194,8 @@ html {
 }
 
 .dropdown button:hover {
-  background-color: #6a7ea6;
+  background-color: white;
+  color:black;
 }
 
 .price li,
@@ -211,7 +212,7 @@ html {
 .price li:hover,
 .color li:hover,
 .brand li:hover {
-  background-color: #6a7ea6;
+  background-color: #51731f;
 }
 
 .price button:focus + ul,
@@ -249,7 +250,8 @@ html {
 
 .sort {
   display: flex;
-  float: right;
+  text-align: right;
+  justify-content: right;
 }
 
 .sort button {
@@ -263,13 +265,32 @@ html {
 .left-sort {
   float: left;
   width: 300px;
-  margin-top: 5em;
+  margin-top: 16px;
   margin-right: 2em;
+  color: #474747;
+  margin-left: 1em;
 }
 
-.left-sort .jacket-list {
-  margin-top: 40em;
+.left-sort hr {
+  border-top: 0.2px #707070;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
+
+.jacket-list li {
+  color: black;
+  list-style: none;
+  font-weight: 500;
+  margin-top: 1em;
+
+}
+
+.jacket-list ul {
+  text-align: left;
+  justify-content: left;
+  padding: 0px;
+}
+
 
 /* Main styles */
 
@@ -446,16 +467,17 @@ html {
 
 }
 
+
 .product-list .card {
   background-color: white;
   border-radius: 20px;
   padding: 1em;
-  box-shadow: 0px 4px 4px rgb(159, 160, 161);
+  box-shadow: 20px 20px 20px -18px rgba(176,176,176,0.82);
   text-align: center;
   min-height: 260px;
   margin-top: 10px;
-  border: 20px black;
   width: 230px;
+  border: solid 1.5px #ebebeb;
 }
 
 .card .title {
@@ -481,7 +503,7 @@ html {
 }
 
 .details-button {
-  background-color: #6a7ea6;
+  background-color: #031C26;
   padding: 0.5em;
   padding-left: 2em;
   padding-right: 2em;
@@ -502,9 +524,11 @@ html {
 
 .product-container {
   display: grid;
-  grid-template-columns: repeat(autofit));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 30px;
+  justify-content: center;
+  text-align: center;
   
 }
 
@@ -513,7 +537,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 30px;
-  width: 60%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .product-image-container {
@@ -671,33 +695,78 @@ font-weight: normal;
 
 /* //////// CONTACT INFORMATION /////// */
 
+.contactush1 {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  color:#031c26;
+  font-size: 3.5em;
+  position: relative;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+
 .contact-information {
   display: flex;
-  background-color: #ebebeb;
+  background-color: #031C26;
+  color:white;
   width: 80%;
   border: none;
-  border-radius: 2em;
+  border-radius: 1em;
   justify-content: center;
   text-align: center;
   margin: auto;
   margin-bottom: 2em;
 }
 
+.contact-information .left-info {
+  text-align: left;
+  margin-left: 3em;
+  margin-bottom: 3em;
+}
+.contact-information .left-info h2 {
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.contact-information .left-info p {
+  margin: 0;
+}
+
+
+.contact-information .middle-info {
+text-align: left;
+position: relative;
+left: 10em;
+margin-top: 3.5em;
+
+
+}
+
+.contact-information .middle-info p i {
+  color: #6a7ea6;
+  margin-right: em;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  justify-content: center;
+}
+
 .contact-information .mapmarker {
-  scale: 700%;
+  scale: 600%;
   padding: 0px;
   margin: auto;
-  color: #607345;
+  color: #51731f;
+  position: relative;
+  left: 5em;
 }
 
 .contact-form input {
-  display: flex;
-  padding: 1em;
-  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #ebebeb;
-  width: 50%;
-  border-radius: 1em;
-  margin: 10px;
+ 
 }
 
 .contact-form button {
@@ -716,7 +785,15 @@ font-weight: normal;
 
 .contact-form img {
   width: 20%;
+  float: right;
+  position: relative;
+  right: 10em;
+  margin-bottom: 1em;
+
 }
+
+
+
 /* ///// CUSTOMER SERVICE BANNER/SEARCH //////// */
 .customer-search-area {
   background-color: #031c26;
@@ -874,6 +951,7 @@ section.cart {
   padding-top: 60px;
   justify-content: center;
   text-align: center;
+  margin-top: 5em;
 }
 
 .footer li a {
