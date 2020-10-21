@@ -63,6 +63,7 @@ html {
   width: 100%;
   justify-content: center;
   text-align: center;
+  padding-left: 4em;
 }
 
 .search i {
@@ -618,9 +619,10 @@ border: none;
 justify-content: center;
 text-align: center;
 position: relative;
-
-
+padding-left: 2em;
 }
+
+
 input[type="email"] {
   width: 35em;
   height: 2.8em;
@@ -638,6 +640,8 @@ input[type="submit"] {
   -webkit-appearance: none;
   font-weight: bold;
   font-size: 0.8em;
+  justify-content: center;
+  text-align: center;
 }
 
 
@@ -762,10 +766,48 @@ margin-top: 3.5em;
   left: 5em;
 }
 
+.contact-form-area {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  position:relative;
+}
+
+.contact-form {
+  background-color: #031c26;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.form-flex {
+  display: flex;
+  
+}
+
+.form-textarea textarea {
+  border: none;
+  border-radius: 1em;
+  padding: 2em;
+  margin-top: 1em;
+  background-color: #ebebeb;
+}
+
+
+.contact-form-area .form-flex input {
+  width: 15em;
+  border: none;
+  margin: 5px;
+  border-radius: 1em;
+  padding-left: 1em;
+}
+
 .contact-form input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #ebebeb;
+  width: 50px;
  
 }
 
@@ -783,15 +825,15 @@ margin-top: 3.5em;
   background-color: #6a7ea6;
 }
 
-.contact-form img {
-  width: 20%;
-  float: right;
-  position: relative;
-  right: 10em;
+.map-image {
+display:flex;
+margin-left: 4em;
+}
+
+.map-image img {
   margin-bottom: 1em;
 
 }
-
 
 
 /* ///// CUSTOMER SERVICE BANNER/SEARCH //////// */
