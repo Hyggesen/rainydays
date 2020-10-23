@@ -23,12 +23,16 @@
         <img src="images/RainyDays_Logo.png" alt="Logo of Rainy Days" />
       </section>
       <section class="background-search">
-        <section class="search">
-          <input type="text" name="search">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </section>
-        <i class="fas fa-shopping-cart"></i>
-      </section>
+
+        <div class="search-bar">
+              <input type="search" name="search" placeholder="Search for products">
+              <span class="fas fa-search"></span>
+        </div>
+        
+        <a href="/checkoutpage.html"><i class="fas fa-shopping-bag"></i></a>
+
+</section>
+
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
@@ -61,42 +65,37 @@
 
           <div class="product-description-container">
             <h1>AMAZING BRAND JACKET</h1>
-            <h3>499,-</h3>
+            <span>499,-</span>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
             </p>
-            <i class="fas fa-check"></i>
-            <h4>In stock</h4>
+            <span class="instock"><i class="fas fa-check"></i><p>In stock</p></span>
+            
 
           <div class="choose-color">
-            <label for="color">Choose color</label>
+            <label for="color"></label>
             <select name="color" id="color">
-
+              <option value="" selected disabled hidden>Choose Color</option>
               <option value="Yellow">Yellow</option>
               <option value="Red">Red</option>
               <option value="Black">Black</option>
-
-
-
             </select>
           </div>
 
             
-  <div class="choose-size">
-
-
-  <label for="size">Choose size</label>
-  <select name="size" id="size>
-
-    <option value="Yellow">40</option>
-    <option value="Red">50</option>
-    <option value="Black">60</option>
-  </select>
+        <div class="choose-size">
+          <label for="size"></label>
+          <select name="size" id="size" value="test">
+            <option value="" selected disabled hidden>Choose Size</option>
+            <option value="Yellow">40</option>
+            <option value="Red">50</option>
+            <option value="Black">60</option>
+          </select>
 
 </div>
-
-<a class="addtocart-button" href="productpage.html">Add to cart</a>
-<a class="buynow-button" href="checkoutpage.html">Buy Now</a>
-
+        <div class="button-wrapper">
+             <a class="addtocart-button" href="productpage.html">Add to cart</a>
+           <a class="buynow-button" href="checkoutpage.html">Buy Now</a>
+        </div>   
 
 
           </div>
@@ -106,23 +105,18 @@
 
 
         <section class="product-dropdown-container">
-
+          <hr class="solid">
           <div class="product-description">
-            <i class="fas fa-chevron-right"></i>
-            <h2>Product description</h2>
+               <h2><i class="fas fa-chevron-right"></i> Product description</h2>
           </div>
-
+          <hr class="solid">
           <div class="technical-spesification">
-
-            <i class="fas fa-chevron-right"></i>
-            <h2>Technical spesification</h2>
-
+               <h2><i class="fas fa-chevron-right"></i> Technical spesification</h2>
           </div>
-
+          <hr class="solid">
           <div class="size-guide">
-
-            <i class="fas fa-chevron-right"></i>
-            <h2>Size guide</h2>
+                <h2><i class="fas fa-chevron-right"></i> Size guide</h2>
+                <hr class="solid">
           </div>
 
         </section>
