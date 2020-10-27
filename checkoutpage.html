@@ -20,7 +20,8 @@
   <body>
     <header>
       <section class="logo">
-        <img src="images/RainyDays_Logo.png" alt="Logo of Rainy Days" />
+        <img src="images/RainyDays_Logo.png" class="logobig" alt="Logo of Rainy Days" />
+        <img src="images/RainyDays_Logo3.png" class="logoresize" alt="Logo of Rainy Days">
       </section>
       <section class="background-search">
 
@@ -46,13 +47,14 @@
     </header>
 
     <main>
-         <div class="breadcrumb-black">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-       
-            <li><a href="customerservice.html">Customer Service</a></li>
-          </ul>
-        </div>
+      <div class="breadcrumb-black">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="newarrivals.html">New Arrivals</a></li>
+          <li><a href="productpage.html">Amazing Brand Jacket</a></li>
+          <li><span>Checkout</span></li>
+        </ul>
+      </div>
      
 
         <section class="shoppingcart-banner">
@@ -81,13 +83,13 @@
                 </p>
                 <div class="description-container">
                   <div class="description">
-                    <div>Color: Red</div>
-                    <div>Size: 50</div>
-                    <div>Remove</div>
+                    <p>Color: Red</p>
+                    <p>Size: 50</p>
+                    <span><i class="fas fa-trash-alt"></i><p>Remove from shopping cart</p></span>
                   </div>
                   <div class="amount">
                     <div>quantity</div>
-                    <div>price</div>
+                    <p>499,-</p>
                   </div>
                 </div>
               </div>
@@ -109,7 +111,12 @@
                   </div>
                   <div class="yes-no">
                     <div>Yes/No</div>
-                    <div>price</div>
+                    <div class="toggle">
+                      <input type="checkbox" id="toggle">
+                      <label for="toggle">
+                        <div class="slide"></div>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -117,10 +124,16 @@
           </div>
           <div class="cost-container">
             <h2>TOTAL COST:</h2>
-            <div class="cost"></div>
-           <p>Total cost (included taxes)</p>
-
-           <div class="totalcost">499,-</div>
+            <div class="cost">
+              <p>Sum:</p>
+              <p>499,-</p>
+            </div>
+           
+            
+            <div class="totalcost">
+              <p>Total cost (included taxes)</p>
+              <p><span> 499,-</span></p>
+            </div>
 
            <a href="/checkoutsuccess.html">CONFIRM AND PURCHASE</a>
               
@@ -135,30 +148,37 @@
         </section>
 
         <form class="billing-form">
-          <h2>BILLING/SHIPPING INFORMATION <i class="fab fa-cc-visa"></i></h2>
+          <div class="shipping-header">
+          <h2>BILLING/SHIPPING INFORMATION</h2>
+          <i class="fab fa-cc-visa"></i>
+        </div>
 
-          <div class="left-form">
-          
-            <input type="text" placeholder="Full name">
-            <input type="text" placeholder="Full name">
-            <input type="text" placeholder="Full name">
-            <input type="email" placeholder="Full name">
-            <input type="tel" placeholder="Full name">
+          <div class="billing-flex">
+              <div class="left-form">
+                   <input type="text" placeholder="Full name">
+                   <input type="text" placeholder="Address">
+                   <input type="text" placeholder="City">
+                   <input type="email" placeholder="E-mail">
+                   <input type="tel" placeholder="Phone">
 
-          </div>
+              </div>
 
 
-          <div class="right-form">
-            <input type="text" placeholder="Full name">
-            <input type="text" placeholder="Full name">
-            <input type="date"> <input type="number">
-
-          </div>
-          <i class="fab fa-cc-paypal"></i>
-
-          <label for="checkbox">Check this to pay with PayPal</label>
-          <input type="checkbox" name="checkbox" id="checkbox">
-
+              <div class="right-form">
+                  <input type="text" placeholder="Card number">
+                  <input type="text" placeholder="Card holders name">
+                      <div class="right-form-inner">
+                          <input type="date" placeholder="date"> <input type="text" placeholder="CSV">
+                      </div>
+             </div>
+         </div>
+                  <div class="paypal">
+                    <i class="fab fa-cc-paypal"></i>
+                     <label for="checkbox">Check this to pay with PayPal</label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                  </div>
+                  
+            
 
 
         </form>
@@ -229,9 +249,8 @@
     <div class="price">499,-</div>
     <a class="details-button" href="productpage.html">Details</a>
   </div>
+
   
-  <BR>
-    <BR>
     </section>
       
     </main>

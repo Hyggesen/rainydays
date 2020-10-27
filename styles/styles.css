@@ -25,7 +25,7 @@ html {
 /* Header styles */
 
 .logo {
-  background-image: url("/images/umbrella3.png");
+  background-image: url("/images/umbrella3.jpg");
   background-size: cover;
   background-position: center center;  
   width: 100%;
@@ -81,23 +81,20 @@ margin: 0 auto;
 .background-search a {
   display:flex;
   border-radius: 1em;
-  color: #031C26;
-  background-color:white;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  position: relative;
-  left: 20%;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 75%;
   font-size: 18px;
   cursor: pointer;
+  height: 30px;
 
 }
 
 
 .background-search a:hover {
   color: #6a7ea6;
-  background-color: white;
 }
 
 
@@ -134,7 +131,6 @@ margin: 0 auto;
   margin: 0px;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.15);
 }
 
 .navigation li {
@@ -175,14 +171,14 @@ margin: 0 auto;
 .price ul,
 .brand ul {
   position: absolute;
-  background-color: #474747;
+  background-color: #031c26;
   margin-top: 10px;
   width: 100px;
   height: 100px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   left: 0px;
+  padding: 12px;
+
 
   flex-direction: column;
   list-style: none;
@@ -201,11 +197,11 @@ margin: 0 auto;
 }
 
 .dropdown button {
-  background: #031c26;
+  background: #031C26;
   color: white;
   border: none;
-  padding: 1em;
-  border-radius: 2em;
+  /* padding: 1em; */
+  border-radius: 1em;
   width: 10em;
   height: 3em;
   font-size: 0.8em;
@@ -246,8 +242,9 @@ margin: 0 auto;
 /* ////// NEW ARRIVALS / ALL PRODUCTS SHARED STYLES ///// */
 
 .under-navigation {
-  background-image: url(/images/hikingbanner2.png);
+  background-image: url(/images/hikingbanner2.jpg);
   background-size: cover;
+  background-position: center center;  
   width: 100%;
   text-align: center;
   height: 12em;
@@ -319,11 +316,12 @@ margin: 0 auto;
 /* ///////// INDEX PAGE STYLES //////////// */
 
 .banner {
-  background-image: url(/images/mountainyesyes.png);
+  background-image: url(/images/mountainyesyes.jpg);
   background-size: cover;
+  background-position: center center;  
   width: 100%;
   text-align: center;
-  height: 20em;
+  height: 30em;
   margin: 0 auto;
 
 }
@@ -364,7 +362,7 @@ margin: 0 auto;
   font-weight: 500;
   font-size: 14px;
   position: relative;
-  top: 10em;
+  top: 15em;
 
   
 
@@ -377,7 +375,7 @@ margin: 0 auto;
   justify-content: center;
   text-align: center;
   color: #031c26;
-  max-width: 230px;
+  max-width: 490px;
   border-radius: 0px 0px 8px 0px;
 }
 
@@ -410,6 +408,11 @@ margin: 0 auto;
   color: #6a7ea6;
   text-decoration: underline;
 }
+
+.breadcrumb-black span {
+  color: #6a7ea6;
+}
+
 
 .breadcrumb {
   justify-content: center;
@@ -575,6 +578,32 @@ margin: 0 auto;
   margin-top: 1.5em;
 }
 
+.product-image-container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.product-image-container img {
+
+}
+
+.leftarrow, .rightarrow {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.middlejacket {
+  flex: 10;
+  justify-content: center;
+  text-align: center;
+}
+
 .product-description-container {
   background-color: #D8D8D8;
   margin-left: 2em;
@@ -594,7 +623,7 @@ margin: 0 auto;
 }
 
 .product-description-container p {
-  width: 25em;
+  max-width: 25em;
 }
 
 .product-description-container .instock {
@@ -611,10 +640,19 @@ color:black;
   border-radius: 1em;
   width: 14em;
   background-color: #474747;
-  color:white;
+  color: white;
+  border: none;
   margin-top: 0.8em;
   text-align-last:center;
   padding: 0.2em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(/images/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 170px center;
+  cursor:pointer;
+  font-size: 14px;
 }
 
 .button-wrapper {
@@ -625,7 +663,7 @@ color:black;
 }
 
 .addtocart-button, .buynow-button {
-  width: 400px;
+  max-width: 400px;
   justify-content: center;
   text-align: center;
   text-decoration: none;
@@ -680,8 +718,9 @@ color:black;
 /* //// SUBSCRIBE BANNER ////// */
 
 .subscribe-banner {
-  background-image: url(/images/snow5.png);
+  background-image: url(/images/snow.jpg);
   background-size: cover;
+  background-position: center center;  
   max-width: 100%;
   height: 300px;
   text-align: center;
@@ -724,10 +763,6 @@ top: 1.3em;
 .subscribe-banner input {
 border-radius: 1.2em;
 border: none;
-justify-content: center;
-text-align: center;
-position: relative;
-padding-left: 2em;
 }
 
 
@@ -736,6 +771,7 @@ padding-left: 2em;
   height: 2.8em;
   padding-right: 50px;
   text-align: left;
+  padding-left:1em;
 }
 
 .subscribe-banner input[type="submit"] {
@@ -756,15 +792,13 @@ padding-left: 2em;
 /* /////// ABOUT US PAGE ////// */
 
 .banner-aboutus {
-  background-image: url(/images/mountainaboutus2.png);
-  background-size: auto;
-  background-repeat: no-repeat;
-  object-fit: contain;
+  background-image: url(/images/mountainaboutus2.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  object-fit: contain;
   width: 100%;
   text-align: center;
-  height: 0 auto;
 }
 
 .banner-aboutus h1 {
@@ -807,14 +841,26 @@ font-weight: normal;
 
 /* //////// CONTACT INFORMATION /////// */
 
+.contact-background {
+  background: rgb(187,187,187);
+  background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(253,253,253,1) 47%, rgba(187,187,187,1) 100%);
+  background-size: cover;
+  background-position: center center;  
+  width: 100%;
+  text-align: center;
+  height: 14em;
+  margin-bottom: 1em;
+}
+  
+
 .contactush1 {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  color:#031c26;
+  color:#6a7ea6;
   font-size: 3.5em;
   position: relative;
-  margin-bottom: 0.5em;
+  letter-spacing: 2px;
   margin-top: 0.5em;
 }
 
@@ -823,19 +869,20 @@ font-weight: normal;
   display: flex;
   background-color: #031C26;
   color:white;
-  width: 80%;
+  width: 100%;
   border: none;
-  border-radius: 1em;
   justify-content: center;
   text-align: center;
   margin: auto;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  justify-content: space-evenly;
 }
 
 .contact-information .left-info {
   text-align: left;
   margin-left: 3em;
   margin-bottom: 3em;
+  flex: 1;
 }
 .contact-information .left-info h2 {
   margin-bottom: 1em;
@@ -849,9 +896,8 @@ font-weight: normal;
 
 .contact-information .middle-info {
 text-align: left;
-position: relative;
-left: 10em;
-margin-top: 3.5em;
+flex: 1;
+margin: auto;
 
 
 }
@@ -866,31 +912,35 @@ margin-top: 3.5em;
 }
 
 .contact-information .mapmarker {
-  scale: 600%;
+  font-size: 6em;
   padding: 0px;
   margin: auto;
   color: #51731f;
-  position: relative;
-  left: 5em;
+  flex: 1;
 }
 
 .contact-form-area {
   display:flex;
   justify-content: center;
   text-align: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position:relative;
+  flex-wrap: wrap;
 }
 
 .contact-form {
   background-color: #031c26;
   padding: 2em;
-  border-radius: 1em;
+  flex: 2;
+ max-width: 100%;
+ box-sizing: border-box;
 }
 
 .form-flex {
   display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
   
 }
 
@@ -901,15 +951,21 @@ margin-top: 3.5em;
   margin-top: 1em;
   background-color: #ebebeb;
   font-family: "Roboto", Arial, sans-serif;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+  display:flex;
 }
 
 
 .contact-form-area .form-flex input {
-  width: 15em;
+  flex: 1;
   border: none;
   margin: 5px;
   border-radius: 1em;
   padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .contact-form input {
@@ -917,9 +973,13 @@ margin-top: 3.5em;
   padding: 0;
  
 }
+.contactbutton {
+  margin: 1.5em;
+  
+}
 
 .contact-form button {
-  background: #0a2740;
+  background:#51731f;
   color: white;
   border: none;
   padding: 0.8em;
@@ -927,6 +987,7 @@ margin-top: 3.5em;
   width: 10em;
   font-weight: bold;
   font-size: 1em;
+  cursor: pointer;
 }
 .contact-form button:hover {
   background-color: #6a7ea6;
@@ -935,24 +996,69 @@ margin-top: 3.5em;
 .image-icons {
   max-width: 100%;
   margin-left: 4em;
+  flex: 1;
+  display: flex;
 }
 
-.map-image img {
+ .image-icons .mapouter {
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   flex: 1 1 300px;
+   min-width: 300px;
+   flex-wrap: wrap;
+ }
+
+ .socialmedia-message2 {
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 0em;
+  float:right;
+  cursor: pointer;
+}
+
+.socialmedia-message2 i {
+  display: inline-block;
+  font-size: 2em;
+  margin-left: 30px;
+  margin-right: 5px;
+  margin-top: 10px;
+  color: #031c26;
+}
+
+
+/* ///// CUSTOMER SERVICE //////// */
+
+
+.customer-background {
+  background: rgb(187,187,187);
+  background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(253,253,253,1) 47%, rgba(187,187,187,1) 100%);
+  background-size: cover;
+  background-position: center center;  
+  width: 100%;
+  text-align: center;
+  height: 14em;
   margin-bottom: 1em;
-
 }
 
 
-
-/* ///// CUSTOMER SERVICE BANNER/SEARCH //////// */
 .customer-search-area {
   background-color: #031c26;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   width: 100%;
   justify-content: center;
   text-align: center;
   color: white;
+  display:flex;
+  flex-direction: column;
+
+}
+
+.customer-search-area h2 {
+  margin:0;
 }
 
 .customer-search-area input {
@@ -960,33 +1066,109 @@ margin-top: 3.5em;
   height: 30px;
   border-radius: 20px;
   border: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 10px;
 }
+
+.customer-service-main{
+display: flex;
+margin-top: 2em;
+
+}
+
+.customer-service-element {
+  max-width: 400px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.customer-service-element h2 {
+  font-size: 2.2em;
+  margin-bottom: 0px;
+}
+
+.customer-service-element h3 {
+  font-size: 1.2em;
+  color: #6a7ea6;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.customer-service-element p{
+  font-size: 1em;
+  color: #031C26;
+  font-weight: 100;
+  margin-top: 4px;
+}
+.customer-left, .customer-right{
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.customer-right {
+  border-left: 1px solid #031c26;
+}
+
+.customer-button {
+text-align: center;
+}
+
+.customer-button button {
+  border:none;
+  border-radius: 2em;
+  background-color: #031C26;
+  color: white;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 4em;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.customer-button button:hover {
+  background-color: #6a7ea6;
+}
+
 
 /* ///// CHECKOUT PAGE STYLES ///// */
 
-.cart div {
-  border: none;
-  max-width: 100%;
+.cart {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin-top: 3em;
+  flex-wrap: wrap;
 }
 
 section.cart {
-  width: 0 auto;
+  /* width: 0 auto;
   margin: auto;
   display: flex;
   margin-top: 3em;
-  margin-left: 2em;
+  margin-left: 2em; */
 }
 
 .items {
+  display:flex;
+  flex-direction: column;
   background-color: #ebebeb;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  overflow:hidden;
 }
 
 .items img {
   background-color: white;
   padding: 1em;
-  width: 150px;
-  height: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   object-fit: contain;
   border-radius: 2em;
   margin-right: 1em;
@@ -1001,11 +1183,44 @@ section.cart {
 
 .item-details {
   margin-left: 10px;
+  flex: 1 0 auto;
+  border-bottom: 1px solid #cecece;
 }
 
 .description-container {
   display: flex;
   justify-content: space-between;
+  flex: 1 0 auto;
+}
+
+.description span {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.description span p {
+  font-weight: 100;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.description span i{
+  margin-right: 8px;
+  font-size: 14px;
+  display: flex;
+}
+
+.description {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+font-weight: 500;
 }
 
 .amount {
@@ -1014,24 +1229,71 @@ section.cart {
   justify-content: space-between;
 }
 
+.amount p {
+  font-size: 28px;
+  font-weight: 600;
+  color: #031C26;
+  margin: 0;
+}
+
+
+
+
 .cost-container {
   margin-left: 5em;
   background-color: #031c26;
   border-radius: none;
   padding: 2em;
-  width: 250px;
+  max-width: 250px;
   color: white;
+  flex: 1 1 300px;
+  display:flex;
+  flex-direction: column;
 }
 
 .cost-container a {
   padding: 1em;
-  border-radius: 2em;
+  border-radius: 1em;
   color: white;
   font-weight: bold;
   background-color: #51731f;
   text-decoration: none;
-  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 4em;
 }
+
+.cost-container h2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  border-bottom: 4px solid #6a7ea6;
+  line-height: 50px;
+}
+
+.cost-container .totalcost span {
+  margin-left: 10px;
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.cost-container .totalcost p {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.cost-container .cost {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  line-height: 10px;
+}
+
 
 /* ///// BILLING FORM STYLES ///// */
 
@@ -1040,14 +1302,72 @@ section.cart {
   background-color: #ebebeb;
   border: none;
   padding: 2em;
-  border-radius: 2em;
-  width: 80%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .billing-form input {
   border: none;
   margin: 1em;
   border-radius: 2em;
+  padding: 1em;
+}
+
+.billing-flex {
+display: flex;
+justify-content: space-between;
+}
+
+.left-form {
+display: flex;
+flex-direction: column;
+flex: 2;
+
+}
+
+.right-form {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+
+.shipping-header {
+  display: flex;
+}
+
+.shipping-header h2 {
+  margin: 20px;
+}
+
+.shipping-header i {
+  justify-content: center center;
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+}
+ 
+.paypal {
+  justify-content: center;
+  text-align: right;
+}
+
+.paypal i {
+  font-size: 1.5em;
+  justify-content: center;
+}
+
+.paypal label {
+  font-size: 1.5em;
+  padding-left: 1em;
+  cursor: pointer;
+  text-decoration: underline;
+  
+}
+
+.paypal input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 /* //////CHECKOUT SUCCESS PAGE ///////// */
@@ -1148,7 +1468,7 @@ section.cart {
   border: none;
 }
 
-input[type="text"] {
+.footer-newsletter input[type="text"] {
   width: 35em;
   height: 2.8em;
   padding-right: 50px;
@@ -1170,6 +1490,17 @@ input[type="submit"] {
 .footer-address p {
   text-align: right;
 }
+
+/* ///////MEDIA QUERIES///////// */
+
+@media only screen and (max-width: 1337px) {
+
+  .background-search a {
+    left: 80%;
+  }
+
+}
+
 
 
 @media only screen and (max-width: 895px) {
@@ -1206,13 +1537,15 @@ input[type="submit"] {
 
 
   .background-search .search-bar input {
-    max-width: 300px;
+    max-width: 400px;
     border: none;
     outline: none;
     border-radius: 20px;
     font-size: 14px;
+    align-items: center;
     justify-content: center;
     text-align: left;
+    margin-right: 4em;
   }
 
 
@@ -1220,5 +1553,82 @@ input[type="submit"] {
     left: 10%;
 
   }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+  .background-search .search-bar input {
+    margin-right: 5em;
+    max-width: 240px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .banner {
+    height: 18em;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+    top: 35px;
+  }
+
+  .banner .inspo-button {
+       top: 9em;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      padding-left: 2em;
+      padding-right: 2em;
+    
+    }
+
+
+    .product-container, .product-container2 {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      
+    }
+
+    .subscribe-banner input[type="email"]{
+    width:20em;
+  }
+
+  }
+
+
+
+
+
+@media only screen and (min-width:1336px) {
+
+  .background-search a {
+    display:flex;
+    border-radius: 1em;
+    color: #031C26;
+    background-color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: absolute;
+    left: 75%;
+    font-size: 18px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  
 
 }
