@@ -13,13 +13,17 @@ Light-grey: #EBEBEB
 /* Global styles */
 html {
   font-family: "Roboto", Arial, sans-serif;
-  max-width: 2000px;
+  /* max-width: 2000px; */
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .align-center {
   text-align: center;
+}
+
+body {
+  margin: 0;
 }
 
 /* Header styles */
@@ -70,7 +74,7 @@ html {
 
 .background-search .search-bar span {
   position: absolute;
-  top: 22em;
+  top: 21.5em;
   color: #031c26;
   display: flex;
   margin-left: 1em;
@@ -1540,6 +1544,7 @@ html {
 .footer-address p {
   text-align: right;
   padding: 5px;
+  margin: 0px;
 }
 
 /* ///////MEDIA QUERIES///////// */
