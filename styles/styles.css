@@ -22,6 +22,11 @@ html {
   text-align: center;
 }
 
+.align-center2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
 body {
   margin: 0;
 }
@@ -244,7 +249,7 @@ body {
 
 .sort {
   display: flex;
-  text-align: right;
+  align-content: flex-end;
   justify-content: right;
 }
 
@@ -345,7 +350,7 @@ body {
 }
 
 .banner .inspo-button:hover {
-  background-color: #6a7ea6;
+  background-color: #51731f;
 }
 
 /* ///// BREADCRUMB STYLES ////// */
@@ -354,7 +359,7 @@ body {
   justify-content: center;
   text-align: center;
   color: #031c26;
-  max-width: 490px;
+  max-width: 550px;
   border-radius: 0px 0px 8px 0px;
 }
 
@@ -497,11 +502,13 @@ body {
   font-size: 14px;
   font-weight: normal;
   margin-top: 0.5em;
+  margin: 0px;
 }
 
 .card .text {
-  font-size: 18 px;
+  font-size: 18px;
   font-weight: bold;
+  margin: 0px;
 }
 
 .card .price {
@@ -541,6 +548,7 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: row;
+  width: 95%;
 }
 
 .product-image-container,
@@ -914,7 +922,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -1430,6 +1438,9 @@ body {
   margin-top: 5em;
 }
 
+.footer ul {
+  padding: 0px;
+}
 .footer-elements {
   display: flex;
   flex-direction: row;
