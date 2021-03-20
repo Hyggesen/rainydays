@@ -27,42 +27,52 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<script src="js/validate.js"></script>
   </head>
 
   <body>
     <header>
-      <section class="logo">
-        <img src="images/RainyDays_Logo.png" class="logobig" alt="Logo of Rainy Days" />
-        <img src="images/RainyDays_Logo3.png" class="logoresize" alt="Logo of Rainy Days">
+      <section class="top-bar">
+        <p>free shipping</p> 
+        <p>100% satisfaction guarantee</p>
+        <p>30 day return policy</p>      
       </section>
+
       <section class="background-search">
-
-        <div class="search-bar">
-              <input type="search" name="search" placeholder="Search for products">
-              <span class="fas fa-search"></span>
+        <div class="logo">
+          rainydays.no
         </div>
+        <div class="search-bar"> 
+              <div class="search-icon" id="search-icon"><span class="fas fa-search"></span></div>
+              <div> <input type="text" id="search" name="search" placeholder="Search for products"></div>
+        </div>
+         
+        <div class="shopping-cart-container">
+               <span class="fa">&#xf290;</span>
+        </div>
+
+        </section>
+
+
+  
+
+      <nav>
         
-        <a href="/checkoutpage.html"><i class="fas fa-shopping-bag"></i></a>
+        <ul class="navigation">
+          <label for="toggle">&#9776</label>
+          <input type="checkbox" id="toggle">
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+            <li><a href="allproducts.html">All products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="customerservice.html">Customer Service</a></li>
 
-</section>
-
-<nav>
-        
-  <ul class="navigation">
-    <label for="toggle">&#9776</label>
-    <input type="checkbox" id="toggle">
-    <div class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="newarrivals.html">New Arrivals</a></li>
-      <li><a href="allproducts.html">All products</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="customerservice.html">Customer Service</a></li>
-
-    </div>
-    
-  </ul>
-</nav>
+          </div>
+          
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -77,7 +87,7 @@
         </ul>
       </div>
       
-      <h1 class=contactush1>CONTACT</h1>
+      <h1 class="contactush1">CONTACT</h1>
     </section>
       <section class="contact-information">
         <div class="left-info">
@@ -104,30 +114,30 @@
         <div class="contact-form">
                   
       
-        
+        <form id="contactForm">
                 <div class="form-flex">
                   <div class="form-flex-left">
-                    <label for="fullname"></label>
+                    <label for="fullname" id="fullname-error">* Please fill out your name</label>
                         <input type="text" id="fullname"placeholder="Full name">
-                    <label for="company"></label>
+                    <label for="company" class=".form-error">* Please fill out your Company name</label>
                         <input type="text" id="company" placeholder="Company">  
                       </div>
                       <div class="form-flex-right">
-                   <label for="email"></label>
+                   <label for="email" class=".form-error">* Please fill in a valid email-address</label>
                         <input type="email" id="email" placeholder="Email">
-                    <label for="phone"></label>
+                    <label for="phone" class=".form-error">* Must be at least 8 digits</label>
                        <input type="tel" id="phone" placeholder="Phone" >
                        </div>
                  </div>
-
+          
                  <div class="form-textarea">
                    <label for="textarea-styled"></label>
                     <textarea name="textarea-styled" id="textarea-styled" cols="100%" rows="10" placeholder="Message"></textarea>
                  </div>
-                 <div class="contactbutton">
-                  <button>Send</button>
+                 <div >
+                  <input id="contactbutton" type="submit" value="Send">
                  </div>
-                  
+                </form>
 
                 </div>
         

@@ -27,42 +27,52 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<script src="/js/script.js"></script>
   </head>
 
   <body>
     <header>
-      <section class="logo">
-        <img src="images/RainyDays_Logo.png" class="logobig" alt="Logo of Rainy Days" />
-        <img src="images/RainyDays_Logo3.png" class="logoresize" alt="Logo of Rainy Days">
+      <section class="top-bar">
+        <p>free shipping</p> 
+        <p>100% satisfaction guarantee</p>
+        <p>30 day return policy</p>      
       </section>
+
       <section class="background-search">
-
-        <div class="search-bar">
-              <input type="search" name="search" placeholder="Search for products">
-              <span class="fas fa-search"></span>
+        <div class="logo">
+          rainydays.no
         </div>
+        <div class="search-bar"> 
+              <div class="search-icon" id="search-icon"><span class="fas fa-search"></span></div>
+              <div> <input type="text" id="search" name="search" placeholder="Search for products"></div>
+        </div>
+         
+        <div class="shopping-cart-container">
+               <span class="fa">&#xf290;</span>
+        </div>
+
+        </section>
+
+
+  
+
+      <nav>
         
-        <a href="/checkoutpage.html"><i class="fas fa-shopping-bag"></i></a>
+        <ul class="navigation">
+          <label for="toggle">&#9776</label>
+          <input type="checkbox" id="toggle">
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+            <li><a href="allproducts.html">All products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="customerservice.html">Customer Service</a></li>
 
-</section>
-
-<nav>
-        
-  <ul class="navigation">
-    <label for="toggle">&#9776</label>
-    <input type="checkbox" id="toggle">
-    <div class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="newarrivals.html">New Arrivals</a></li>
-      <li><a href="allproducts.html">All products</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="customerservice.html">Customer Service</a></li>
-
-    </div>
-    
-  </ul>
-</nav>
+          </div>
+          
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -89,7 +99,7 @@
 
         <section class="cart">
           <div class="items">
-            <div class="item">
+            <div class="item item1">
               <img
                 src="images/yellowjacket3.png"
                 alt="A nice yellow jacket"
@@ -104,16 +114,20 @@
                   <div class="description">
                     <p>Color: Red</p>
                     <p>Size: 50</p>
-                    <span><i class="fas fa-trash-alt"></i><p>Remove from shopping cart</p></span>
+                    <span><i class="fas fa-trash-alt"></i><p onclick="removeItem ()">Remove from shopping cart</p></span>
                   </div>
                   <div class="amount">
-                    <div class="piece">1 Piece</div>
+                    <div class="quantity">
+                      <input type="button" value="-" class="minus">
+                      <input type="number" name="quantity" value="1" class="quantity_input">
+                      <input type="button" value="+" class="plus">
+                    </div>
                     <p>499,-</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item item2">
               <img
                 src="images/RainyDays_Logo2.png"
                 alt="The logo of Rainydays. Solid text with mountains illustrated in the background"
@@ -126,7 +140,7 @@
                 </p>
                 <div class="description-container">
                   <div class="description">
-                    <span><i class="fas fa-trash-alt"></i><p>Remove from shopping cart</p></span>
+                    <span><i class="fas fa-trash-alt"></i><p onclick="removeStickers ()">Remove from shopping cart</p></span>
                   </div>
                 </div>
               </div>
@@ -136,13 +150,13 @@
             <h2>TOTAL COST:</h2>
             <div class="cost">
               <p>Sum:</p>
-              <p>499,-</p>
+              <p class="sum">499,-</p>
             </div>
            
             
             <div class="totalcost">
               <p>Total cost (included taxes)</p>
-              <p><span> 499,-</span></p>
+              <p><span class="totalcost_sum">499,-</span></p>
             </div>
 
            <a href="/checkoutsuccess.html">CONFIRM AND PURCHASE</a>
@@ -210,49 +224,59 @@
             <!-- SHOW-OFF PRODUCT 1 -->
             <div class="card">
               <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-              <p class="title">AMAZING BRAND</p>
-              <p class="text">NICE BLACK JACKET</p>
-              <p class="price">899,-</p> 
-              <a class="details-button" href="productpage.html">Details</a>
-            </div>
+              <div class="bottom-card">
+                   <p class="text">Adventurelife jacket</p>
+                   <p class="title">Natura Outdoors</p>
+                   <p class="price">599,-</p> 
+                  <a class="details-button" href="productpage.html">Details</a>
+              </div>
+         </div>
   
   
   <!-- SHOW-OFF PRODUCT 2 -->
   
   <div class="card">
     <img src="images/redbluejacket.jpg" alt="Our fresh red hiking jacket" />
-    <p class="title">AMAZING BRAND</p>
-    <p class="text">COOL RED & BLUE JACKET</p>
-    <p class="price">599,-</p> 
-    <a class="details-button" href="productpage.html">Details</a>
+    <div class="bottom-card">
+         <p class="text">Protech jacket</p>
+         <p class="title">Bark & Blad</p>
+         <p class="price">599,-</p> 
+        <a class="details-button" href="productpage.html">Details</a>
+    </div>
   </div>
   
   
   <!-- SHOW-OFF PRODUCT 3 -->
   <div class="card">
-            <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
-            <p class="title">AMAZING BRAND</p>
-            <p class="text">AMAZING YELLOW JACKET</p>
-            <p class="price">499,-</p> 
-            <a class="details-button" href="productpage.html">Details</a>
-        </div>
+    <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
+    <div class="bottom-card">
+         <p class="text">Winterstorm jacket</p>
+         <p class="title">Spors Universal</p>
+         <p class="price">599,-</p> 
+        <a class="details-button" href="productpage.html">Details</a>
+    </div>
+  </div>
   
   <!-- SHOW-OFF PRODUCT 4 -->
   <div class="card">
     <img src="images/lightbluejacket.jpg" alt="Our fresh blue hiking jacket" />
-    <p class="title">AMAZING BRAND</p>
-    <p class="text">FRESH BLUE JACKET</p>
-    <p class="price">649,-</p> 
-    <a class="details-button" href="productpage.html">Details</a>
+    <div class="bottom-card">
+         <p class="text">COOL RED & BLUE JACKET</p>
+         <p class="title">AMAZING BRAND</p>
+         <p class="price">599,-</p> 
+        <a class="details-button" href="productpage.html">Details</a>
+    </div>
   </div>
   
   <!-- SHOW-OFF PRODUCT 5 -->
   <div class="card">
     <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-    <p class="title">AMAZING BRAND</p>
-    <p class="text">NICE BLACK JACKET</p>
-    <p class="price">899,-</p> 
-    <a class="details-button" href="productpage.html">Details</a>
+    <div class="bottom-card">
+         <p class="text">Adventurelife jacket</p>
+         <p class="title">Natura Outdoors</p>
+         <p class="price">599,-</p> 
+        <a class="details-button" href="productpage.html">Details</a>
+    </div>
   </div>
     </section>
       

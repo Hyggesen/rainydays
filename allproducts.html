@@ -31,41 +31,53 @@
 
   <body>
     <header>
-      <section class="logo">
-        <img src="images/RainyDays_Logo.png" class="logobig" alt="Logo of Rainy Days" />
-        <img src="images/RainyDays_Logo3.png" class="logoresize" alt="Logo of Rainy Days">
+      <section class="top-bar">
+        <p>free shipping</p> 
+        <p>100% satisfaction guarantee</p>
+        <p>30 day return policy</p>      
       </section>
+
       <section class="background-search">
-
-        <div class="search-bar">
-              <input type="search" name="search" placeholder="Search for products">
-              <span class="fas fa-search"></span>
+        <div class="logo">
+          rainydays.no
         </div>
-        
-        <a href="/checkoutpage.html"><i class="fas fa-shopping-bag"></i></a>
+        <div class="search-bar"> 
+              <div class="search-icon" id="search-icon"><span class="fas fa-search"></span></div>
+              <div> <input type="text" id="search" name="search" placeholder="Search for products"></div>
+        </div>
+         
+        <div class="shopping-cart-container">
+          <img class="alert" src="/images/alert.png" alt="alert icon">
+               <span class="fa">&#xf290;</span>
+        </div>
 
-</section>
-<nav>
-        
-  <ul class="navigation">
-    <label for="toggle">&#9776</label>
-    <input type="checkbox" id="toggle">
-    <div class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="newarrivals.html">New Arrivals</a></li>
-      <li><a href="allproducts.html">All products</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="customerservice.html">Customer Service</a></li>
+        </section>
 
-    </div>
-    
-  </ul>
-</nav>
+
+  
+
+      <nav>
+        
+        <ul class="navigation">
+          <label for="toggle">&#9776</label>
+          <input type="checkbox" id="toggle">
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+            <li><a href="allproducts.html">All products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="customerservice.html">Customer Service</a></li>
+
+          </div>
+          
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section class="under-navigation">
+        <div class="under-navigation--overlay"></div>
         <div class="breadcrumb">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -136,111 +148,135 @@
   
         <section class="product-list">
           <div class="product-container2">
-          <!-- First Product -->
-          <div class="card">
-            <img src="images/redbluejacket.jpg" alt="Our fresh red hiking jacket" />
-            <p class="title">AMAZING BRAND</p>
-            <p class="text">COOL RED & BLUE JACKET</p>
-            <p class="price">599,-</p> 
-            <a class="details-button" href="productpage.html">Details</a>
-        </div>
+            <!-- First Product -->
+            <div class="card">
+              <img src="images/redbluejacket.jpg" alt="Our fresh red hiking jacket" />
+              <div class="bottom-card">
+                   <p class="text">Protech jacket</p>
+                   <p class="title">Bark & Blad</p>
+                   <p class="price">549,-</p> 
+                  <a class="details-button" href="productpage.html">Details</a>
+              </div>
+         </div>
   
-        <!-- Second product -->
+         <!-- Second product -->
   
-        <div class="card">
-          <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
-          <p class="title">AMAZING BRAND</p>
-          <p class="text">AMAZING YELLOW JACKET</p>
-          <p class="price">499,-</p> 
-          <a class="details-button" href="productpage.html">Details</a>
+  
+         <div class="card">
+           <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
+           <div class="bottom-card">
+                <p class="text">Winterstorm jacket</p>
+                <p class="title">Spors Universal</p>
+                <p class="price">1499,-</p> 
+               <a class="details-button" href="productpage.html">Details</a>
+           </div>
       </div>
   
-        <!-- Third product -->
-        <div class="card">
-          <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-          <p class="title">AMAZING BRAND</p>
-          <p class="text">NICE BLACK JACKET</p>
-          <p class="price">899,-</p> 
-          <a class="details-button" href="productpage.html">Details</a>
-        </div>
+         <!-- Third product -->
   
-        <!-- Fourth product -->
-        <div class="card">
-          <img src="images/lightbluejacket.jpg" alt="Our fresh blue hiking jacket" />
-          <p class="title">AMAZING BRAND</p>
-          <p class="text">FRESH BLUE JACKET</p>
-          <p class="price">649,-</p> 
-          <a class="details-button" href="productpage.html">Details</a>
+         <div class="card">
+           <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
+           <div class="bottom-card">
+                <p class="text">Adventurelife jacket</p>
+                <p class="title">Natura Outdoors</p>
+                <p class="price">849,-</p> 
+               <a class="details-button" href="productpage.html">Details</a>
+           </div>
       </div>
   
-        <!-- Fifth product -->
+         <!-- Fourth product -->
   
-        <div class="card">
-          <img src="images/redbluejacket.jpg" alt="Our fresh red hiking jacket" />
-          <p class="title">AMAZING BRAND</p>
-          <p class="text">COOL RED & BLUE JACKET</p>
-          <p class="price">599,-</p> 
-          <a class="details-button" href="productpage.html">Details</a>
+         <div class="card">
+           <img src="images/lightbluejacket.jpg" alt="Our fresh blue hiking jacket" />
+           <div class="bottom-card">
+                <p class="text">Kobba jacket</p>
+                <p class="title">Vestavind Sports</p>
+                <p class="price">399,-</p> 
+               <a class="details-button" href="productpage.html">Details</a>
+           </div>
       </div>
   
-        <!-- Sixth product -->
-        <div class="card">
-          <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
-          <p class="title">AMAZING BRAND</p>
-          <p class="text">AMAZING YELLOW JACKET</p>
-          <p class="price">499,-</p> 
-          <a class="details-button" href="productpage.html">Details</a>
+         <!-- Fifth product -->
+  
+         <div class="card">
+           <img src="images/redbluejacket.jpg" alt="Our fresh red hiking jacket" />
+           <div class="bottom-card">
+                <p class="text">Protech jacket</p>
+                <p class="title">Bark & Blad</p>
+                <p class="price">499,-</p> 
+               <a class="details-button" href="productpage.html">Details</a>
+           </div>
       </div>
   
-        <!-- Seventh product -->
+         <!-- Sixth product -->
+         <div class="card">
+           <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
+           <div class="bottom-card">
+                <p class="text">Winterstorm jacket</p>
+                <p class="title">Spors Universal</p>
+                <p class="price">799,-</p> 
+               <a class="details-button" href="productpage.html">Details</a>
+           </div>
+      </div>
   
-        <div class="card">
-          <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-          <p class="title">AMAZING BRAND</p>
-          <p class="text">NICE BLACK JACKET</p>
-          <p class="price">899,-</p> 
-          <a class="details-button" href="productpage.html">Details</a>
-        </div>
+         <!-- Seventh product -->
+  
+         <div class="card">
+           <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
+           <div class="bottom-card">
+                <p class="text">Adventurelife jacket</p>
+                <p class="title">Natura Outdoors</p>
+                <p class="price">449,-</p> 
+               <a class="details-button" href="productpage.html">Details</a>
+           </div>
+      </div>
   
             <!-- Eighth product -->
   
             <div class="card">
               <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-              <p class="title">AMAZING BRAND</p>
-              <p class="text">NICE BLACK JACKET</p>
-              <p class="price">899,-</p> 
-              <a class="details-button" href="productpage.html">Details</a>
-            </div>
+              <div class="bottom-card">
+                   <p class="text">Adventurelife jacket</p>
+                   <p class="title">Natura Outdoors</p>
+                   <p class="price">849,-</p> 
+                  <a class="details-button" href="productpage.html">Details</a>
+              </div>
+         </div>
   
             <!-- Ninth product -->
             <div class="card">
               <img src="images/redbluejacket.jpg" alt="Our fresh red hiking jacket" />
-              <p class="title">AMAZING BRAND</p>
-              <p class="text">COOL RED & BLUE JACKET</p>
-              <p class="price">599,-</p> 
-              <a class="details-button" href="productpage.html">Details</a>
-          </div>
+              <div class="bottom-card">
+                   <p class="text">Protech jacket</p>
+                   <p class="title">Bark & Blad</p>
+                   <p class="price">549,-</p> 
+                  <a class="details-button" href="productpage.html">Details</a>
+              </div>
+         </div>
   
   
   
   <!-- Tenth product -->
   <div class="card">
     <img src="images/lightbluejacket.jpg" alt="Our fresh blue hiking jacket" />
-    <p class="title">AMAZING BRAND</p>
-    <p class="text">FRESH BLUE JACKET</p>
-    <p class="price">649,-</p> 
-    <a class="details-button" href="productpage.html">Details</a>
+    <div class="bottom-card">
+         <p class="text">Kobba jacket</p>
+         <p class="title">Vestavind Sports</p>
+         <p class="price">399,-</p> 
+        <a class="details-button" href="productpage.html">Details</a>
+    </div>
   </div>
-  
   
   
   <!-- Elleventh product -->
   <div class="card">
     <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
-    <p class="title">AMAZING BRAND</p>
-    <p class="text">COOL YELLOW JACKET</p>
-    <p class="price">499,-</p> 
-    <a class="details-button" href="productpage.html">Details</a>
+    <div class="bottom-card">
+         <p class="text">Winterstorm jacket</p>
+         <p class="title">Spors Universal</p>
+         <p class="price">1499,-</p> 
+        <a class="details-button" href="productpage.html">Details</a>
+    </div>
   </div>
   
   
@@ -248,10 +284,12 @@
   <!-- Twelveth product -->
   <div class="card">
     <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-    <p class="title">AMAZING BRAND</p>
-    <p class="text">NICE BLACK JACKET</p>
-    <p class="price">899,-</p> 
-    <a class="details-button" href="productpage.html">Details</a>
+    <div class="bottom-card">
+         <p class="text">Adventurelife jacket</p>
+         <p class="title">Natura Outdoors</p>
+         <p class="price">849,-</p> 
+        <a class="details-button" href="productpage.html">Details</a>
+    </div>
   </div>
   
           </div>
@@ -274,49 +312,59 @@
           <!-- SHOW-OFF PRODUCT 1 -->
           <div class="card">
             <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-            <p class="title">AMAZING BRAND</p>
-            <p class="text">NICE BLACK JACKET</p>
-            <p class="price">899,-</p> 
-            <a class="details-button" href="productpage.html">Details</a>
-          </div>
+            <div class="bottom-card">
+                 <p class="text">Adventurelife jacket</p>
+                 <p class="title">Natura Outdoors</p>
+                 <p class="price">599,-</p> 
+                <a class="details-button" href="productpage.html">Details</a>
+            </div>
+       </div>
 
 
 <!-- SHOW-OFF PRODUCT 2 -->
 
 <div class="card">
   <img src="images/redbluejacket.jpg" alt="Our fresh red hiking jacket" />
-  <p class="title">AMAZING BRAND</p>
-  <p class="text">COOL RED & BLUE JACKET</p>
-  <p class="price">599,-</p> 
-  <a class="details-button" href="productpage.html">Details</a>
+  <div class="bottom-card">
+       <p class="text">Protech jacket</p>
+       <p class="title">Bark & Blad</p>
+       <p class="price">599,-</p> 
+      <a class="details-button" href="productpage.html">Details</a>
+  </div>
 </div>
 
 
 <!-- SHOW-OFF PRODUCT 3 -->
 <div class="card">
-          <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
-          <p class="title">AMAZING BRAND</p>
-          <p class="text">AMAZING YELLOW JACKET</p>
-          <p class="price">499,-</p> 
-          <a class="details-button" href="productpage.html">Details</a>
-      </div>
+  <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
+  <div class="bottom-card">
+       <p class="text">Winterstorm jacket</p>
+       <p class="title">Spors Universal</p>
+       <p class="price">599,-</p> 
+      <a class="details-button" href="productpage.html">Details</a>
+  </div>
+</div>
 
 <!-- SHOW-OFF PRODUCT 4 -->
 <div class="card">
   <img src="images/lightbluejacket.jpg" alt="Our fresh blue hiking jacket" />
-  <p class="title">AMAZING BRAND</p>
-  <p class="text">FRESH BLUE JACKET</p>
-  <p class="price">649,-</p> 
-  <a class="details-button" href="productpage.html">Details</a>
+  <div class="bottom-card">
+       <p class="text">COOL RED & BLUE JACKET</p>
+       <p class="title">AMAZING BRAND</p>
+       <p class="price">599,-</p> 
+      <a class="details-button" href="productpage.html">Details</a>
+  </div>
 </div>
 
 <!-- SHOW-OFF PRODUCT 5 -->
 <div class="card">
   <img src="images/blueblackjacket.jpg" alt="Our fresh black hiking jacket" />
-  <p class="title">AMAZING BRAND</p>
-  <p class="text">NICE BLACK JACKET</p>
-  <p class="price">899,-</p> 
-  <a class="details-button" href="productpage.html">Details</a>
+  <div class="bottom-card">
+       <p class="text">Adventurelife jacket</p>
+       <p class="title">Natura Outdoors</p>
+       <p class="price">599,-</p> 
+      <a class="details-button" href="productpage.html">Details</a>
+  </div>
 </div>
   </section>
 
