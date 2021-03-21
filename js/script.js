@@ -27,5 +27,24 @@ function costChange() {
 
 function sortRainJackets() {
   const redblue = document.querySelectorAll(".redblue");
-  redblue.style.display = "none";
+  const yellow = document.querySelectorAll(".yellowjacket");
+
+  yellow[0].style.display = "none";
+  yellow[1].style.display = "none";
+  yellow[2].style.display = "none";
+  redblue[0].style.display = "none";
+  redblue[1].style.display = "none";
+  redblue[2].style.display = "none";
+}
+
+function sortHikingJackets() {
+  const redblue = document.querySelectorAll(".redblue");
+  const yellow = document.querySelectorAll(".yellowjacket");
+
+  yellow[0].style.display = "block";
+  yellow[1].style.display = "block";
+  yellow[2].style.display = "block";
+  redblue[0].style.display = "block";
+  redblue[1].style.display = "block";
+  redblue[2].style.display = "block";
 }

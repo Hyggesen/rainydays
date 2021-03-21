@@ -27,7 +27,8 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<script src="js/validate.js"></script>
+
+
   </head>
 
   <body>
@@ -39,15 +40,16 @@
       </section>
 
       <section class="background-search">
-        <div class="logo">
+        <a class="logo" href="index.html">
           rainydays.no
-        </div>
+        </a>
         <div class="search-bar"> 
               <div class="search-icon" id="search-icon"><span class="fas fa-search"></span></div>
               <div> <input type="text" id="search" name="search" placeholder="Search for products"></div>
         </div>
          
         <div class="shopping-cart-container">
+          <img class="alert" src="/images/alert.png" alt="alert icon">
                <span class="fa">&#xf290;</span>
         </div>
 
@@ -55,11 +57,10 @@
 
 
   
-
       <nav>
         
         <ul class="navigation">
-          <label for="toggle">&#9776</label>
+          <label class="hamburger" for="toggle">&#9776</label>
           <input type="checkbox" id="toggle">
           <div class="menu">
             <li><a href="index.html">Home</a></li>
@@ -76,22 +77,17 @@
     </header>
 
     <main>
-      <section class="contact-background">
 
-      
-      <div class="breadcrumb-black">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li><span>Contact</span></a></li>
-        </ul>
-      </div>
-      
-      <h1 class="contactush1">CONTACT</h1>
-    </section>
       <section class="contact-information">
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+  
+            <li><span>Contact</span></a></li>
+          </ul>
+        </div>
         <div class="left-info">
-          <h2>RAINYDAYS</h2>
+          <h2>CONTACT</h2>
           <p>Raindays AS, Noroffstreet 21</p>
           <p>5020 TheInternett</p>
           <p>Postbox 1337</p>
@@ -111,36 +107,45 @@
 
 <section class="contact-form-area">
 
-        <div class="contact-form">
-                  
-      
-        <form id="contactForm">
-                <div class="form-flex">
-                  <div class="form-flex-left">
-                    <label for="fullname" id="fullname-error">* Please fill out your name</label>
-                        <input type="text" id="fullname"placeholder="Full name">
-                    <label for="company" class=".form-error">* Please fill out your Company name</label>
-                        <input type="text" id="company" placeholder="Company">  
-                      </div>
-                      <div class="form-flex-right">
-                   <label for="email" class=".form-error">* Please fill in a valid email-address</label>
-                        <input type="email" id="email" placeholder="Email">
-                    <label for="phone" class=".form-error">* Must be at least 8 digits</label>
-                       <input type="tel" id="phone" placeholder="Phone" >
-                       </div>
-                 </div>
-          
-                 <div class="form-textarea">
-                   <label for="textarea-styled"></label>
-                    <textarea name="textarea-styled" id="textarea-styled" cols="100%" rows="10" placeholder="Message"></textarea>
-                 </div>
-                 <div >
-                  <input id="contactbutton" type="submit" value="Send">
-                 </div>
-                </form>
 
-                </div>
-        
+  <form class="theform" id="contactForm">
+    <div class="formitem">
+      <label for="name">Full name: (required)</label>
+      <input type="text" name="name" id="name" />
+      <div class="form-error" id="nameError">Please enter your name</div>
+    </div>
+
+    <div class="formitem">
+      <label for="subject">Subject: (required)</label>
+      <input type="text" name="subject" id="subject" />
+      <div class="form-error" id="subjectError">
+        You must include a subject
+      </div>
+    </div>
+
+    <div class="formitem">
+      <label for="email">Email: (required)</label>
+      <input name="email" id="email" />
+      <div class="form-error" id="emailError">
+        Please enter a valid email address
+      </div>
+    </div>
+
+    <div class="formitem">
+      <label for="textarea">Message: (Must have at least 50 characters)</label>
+      <textarea name="textarea" id="textarea" placeholder="Enter your message here..."></textarea>
+      <div class="form-error" id="textareaError">
+        Your message must at least have 50 characters
+      </div>
+    </div>
+
+    <button class="formbutton">Submit</button>
+  </form>
+
+
+
+
+     
       
       <div class="image-icons">
 
@@ -215,5 +220,6 @@
     
     
     </footer>
+    <script src="js/validate.js"></script>
   </body>
 </html>

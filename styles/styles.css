@@ -32,7 +32,7 @@ body {
 }
 
 main {
-  width: 1200px;
+  max-width: 1200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -62,6 +62,12 @@ main {
   margin-right: 100px;
   font-weight: bold;
   color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #099cf1;
 }
 
 /* //////////////// THE SEARCH BAR ////////////// */
@@ -222,7 +228,8 @@ input::-webkit-inner-spin-button {
 .navigation {
   list-style-type: none;
   background-color: #007bc2;
-  padding: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   margin: 0px;
   overflow: hidden;
   text-align: center;
@@ -550,7 +557,7 @@ input::-webkit-inner-spin-button {
 /* //////// SHOPPING CART BANNER /////// */
 
 .shoppingcart-banner {
-  background: #007bc2;
+  background: #031c26;
   color: white;
   display: flex;
   padding: 2em;
@@ -631,7 +638,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bottom-card .text {
-  background-color: #007bc2;
+  background-color: #031c26;
   color: white;
   font-size: 15px;
   padding-top: 3px;
@@ -979,14 +986,6 @@ input::-webkit-inner-spin-button {
 
 /* //////// CONTACT INFORMATION /////// */
 
-#fullname-error {
-  color: #ff4747;
-  display: flex;
-  text-align: left;
-  margin-left: 12px;
-  visibility: hidden;
-}
-
 .contact-background {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -1014,8 +1013,9 @@ input::-webkit-inner-spin-button {
 }
 
 .contact-information {
+  height: 12em;
   display: flex;
-  background-color: #72bb72;
+  background-color: #031c26;
   color: white;
   width: 100%;
   border: none;
@@ -1077,76 +1077,59 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
 }
 
-.contact-form {
-  background-color: #1f1f1f;
-  padding: 2em;
-  flex: 2;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.form-flex {
+.theform {
   display: flex;
-  max-width: 100%;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.form-flex-left {
-  display: flex;
-  width: 50%;
   flex-direction: column;
-}
-
-.form-flex-right {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-}
-
-.form-textarea textarea {
-  border: none;
-  border-radius: 1em;
+  color: black;
+  align-items: center;
   padding: 2em;
-  margin-top: 1em;
-  background-color: #ebebeb;
-  font-family: "Roboto", Arial, sans-serif;
+  background-color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.theform textarea {
   width: 100%;
-  box-sizing: border-box;
-  flex: 1;
+  height: 150px;
+}
+
+.formitem {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.theform input,
+.theform button {
+  width: 100%;
+  font-size: 20px;
 }
 
-.contact-form-area .form-flex input {
-  flex: 1;
+.formitem label {
+  font-size: 14px;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  display: block;
+}
+
+.formbutton {
+  padding: 1em;
+  margin-top: 10px;
+  background-color: #007bc2;
   border: none;
-  margin: 5px;
-  border-radius: 1em;
-  padding-left: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.contact-form input {
-  background-color: #ffffff;
-  padding: 0;
-}
-
-#contactbutton {
-  margin: 1.5em;
-  background: #72bb72;
   color: white;
-  border: none;
-  padding: 0.8em;
-  border-radius: 2em;
-  width: 10em;
-  font-weight: bold;
-  font-size: 1em;
   cursor: pointer;
 }
-#contactbutton:hover {
-  background-color: rgb(255, 255, 255);
-  color: #72bb72;
+
+.formbutton:hover {
+  background-color: #72bb72;
+  color: white;
+}
+
+.form-error {
+  display: none;
+  color: Red;
+  font-size: 12px;
+  margin-bottom: 3px;
 }
 
 .image-icons {
@@ -1203,11 +1186,9 @@ input::-webkit-inner-spin-button {
 }
 
 .customer-search-area {
-  background-color: #72bb72;
-  padding-top: 3.4em;
-  padding-bottom: 3.4em;
+  background-color: #031c26;
+  height: 12em;
   width: 100%;
-  justify-content: center;
   text-align: center;
   color: white;
   display: flex;
@@ -1469,8 +1450,8 @@ input::-webkit-inner-spin-button {
 
 .billing-form {
   margin-top: 20px;
-  background-color: #007bc2;
-  color: white;
+  background-color: #ebebeb;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 2em;
   width: 100%;
@@ -1714,12 +1695,37 @@ input::-webkit-inner-spin-button {
 /* ///////MEDIA QUERIES///////// */
 
 @media only screen and (max-width: 1337px) {
+  .search-bar input {
+    max-width: 350px;
+  }
+
+  .background-search span {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .banner-overlay {
+    width: 100%;
+  }
+
+  .under-navigation--overlay {
+    width: 100%;
+  }
+
+  .banner-aboutus_overlay {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 895px) {
   .socialmedia-message i,
   .socialmedia-message h2 {
     font-size: 1.5em;
+  }
+
+  .logo {
+    margin-right: 20px;
   }
 
   .newarr-allpro-container {
@@ -1750,28 +1756,54 @@ input::-webkit-inner-spin-button {
   }
 
   .search-bar input {
-    max-width: 300px;
+    max-width: 270px;
   }
 
   .background-search i {
     left: 10%;
   }
 
-  .banner-aboutus {
-    height: 20em;
-  }
-
-  .banner-aboutus h1 {
-    font-size: 4em;
-    margin: 10px;
-  }
-  .banner-aboutus img {
-    scale: 70%;
-    margin-top: -20px;
+  .contact-form-area {
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 700px) {
+  .form-flex {
+    flex-direction: column;
+  }
+
+  .form-flex-left,
+  .form-flex-right {
+    width: 100%;
+  }
+
+  .background-search {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .background-search span {
+    margin-left: 5px;
+  }
+
+  .top-bar {
+    display: none;
+  }
+  .logo {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .search-bar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .shopping-cart-container {
+    padding: 10px;
+  }
+
   .paypal label,
   .paypal i {
     font-size: 1.2em;
@@ -1812,10 +1844,6 @@ input::-webkit-inner-spin-button {
     display: none;
   }
 
-  .footer-elements h2 {
-    color: #6a7ea6;
-  }
-
   .newsletter-child {
     margin-top: 2em;
   }
@@ -1827,8 +1855,21 @@ input::-webkit-inner-spin-button {
     max-width: 200px;
   }
 
+  .background-search span {
+    margin: 0;
+  }
+
+  .shopping-cart-container {
+    justify-content: center;
+  }
+
   .banner {
     height: 14em;
+  }
+
+  .banner-overlay {
+    height: 14em;
+    width: 100%;
   }
 
   .banner h1 {
@@ -1837,7 +1878,7 @@ input::-webkit-inner-spin-button {
   }
 
   .banner .inspo-button {
-    top: 9em;
+    top: 6em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
     padding-left: 2em;
@@ -1875,18 +1916,6 @@ input::-webkit-inner-spin-button {
     width: 10em;
   }
 
-  .banner-aboutus {
-    height: 10em;
-  }
-
-  .banner-aboutus h1 {
-    font-size: 3em;
-    margin: 10px;
-  }
-  .banner-aboutus img {
-    display: none;
-  }
-
   .contact-information {
     flex-direction: column;
     align-items: center;
@@ -1911,37 +1940,6 @@ input::-webkit-inner-spin-button {
 
   .contactush1 {
     font-size: 3em;
-  }
-}
-
-@media only screen and (min-width: 1336px) {
-  .background-search a {
-    display: flex;
-    border-radius: 1em;
-    color: black;
-    background-color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    position: absolute;
-    left: 75%;
-    font-size: 18px;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .image-icons {
-    margin: 0px;
-    height: 20em;
-    margin-top: 2em;
-    min-width: 325px;
-  }
-
-  .contact-form-area {
-    flex-direction: column;
   }
 }
 

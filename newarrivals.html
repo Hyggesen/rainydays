@@ -26,7 +26,7 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<script src="/js/script.js"></script>
+
   </head>
 
   <body>
@@ -38,9 +38,9 @@
       </section>
 
       <section class="background-search">
-        <div class="logo">
+        <a class="logo" href="index.html">
           rainydays.no
-        </div>
+        </a>
         <div class="search-bar"> 
               <div class="search-icon" id="search-icon"><span class="fas fa-search"></span></div>
               <div> <input type="text" id="search" name="search" placeholder="Search for products"></div>
@@ -144,8 +144,8 @@
         <hr class="solid">
         <div class="jacket-list">
           <ul>
-            <li onclick="sortRainJackets()">Rain jackets</li>
-            <li class="hikingjackets">Hiking jackets</li>
+            <li class="rainjackets" onclick="sortRainJackets()">Rain jackets</li>
+            <li class="hikingjackets" onclick="sortHikingJackets()">Hiking jackets</li>
             <li class="runningjackets">Running jackets</li>
           </ul>
           <hr class="solid">
@@ -168,7 +168,7 @@
        <!-- Second product -->
 
 
-       <div class="card">
+       <div class="card yellowjacket">
          <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
          <div class="bottom-card">
               <p class="text">Winterstorm jacket</p>
@@ -215,7 +215,7 @@
     </div>
 
        <!-- Sixth product -->
-       <div class="card">
+       <div class="card yellowjacket">
          <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
          <div class="bottom-card">
               <p class="text">Winterstorm jacket</p>
@@ -275,7 +275,7 @@
 
 
 <!-- Elleventh product -->
-<div class="card">
+<div class="card yellowjacket">
   <img src="images/yellowjacket4.png" alt="Our fresh yellow hiking jacket" />
   <div class="bottom-card">
        <p class="text">Winterstorm jacket</p>
@@ -426,5 +426,6 @@
     
     
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
