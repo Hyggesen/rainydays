@@ -3,7 +3,7 @@ const key = "consumer_key=ck_d73cda14f037b09c0c4c3ec694d69287d6ce6f33";
 const secret = "consumer_secret=cs_d39990c64d590ccc8f9f6711ea8df93dd0568733";
 const wooApi =`${url}?${key}&${secret}`;
 
-const productContainer = document.querySelector (".products");
+const productContainer = document.querySelector (".allproducts");
 const featuredContainer = document.querySelector(".featured");
 
 async function getProducts () {
@@ -25,7 +25,7 @@ getProducts();
 
 function createHtml (products) {
     
-    products.slice(-8).forEach(function(product){
+    products.forEach(function(product){
 
 const productHtml = 
 `<div class="card">
