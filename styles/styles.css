@@ -188,10 +188,6 @@ color: #000000;
   align-items: center;
 }
 
-.background-search .search-icon:hover {
-  background-color: #099cf1;
-  cursor: pointer;
-}
 
 #search-icon:hover #search {
   border: 2px solid rgb(250, 16, 16);
