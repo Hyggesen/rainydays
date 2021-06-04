@@ -1,34 +1,28 @@
 const productContainer = document.querySelector(".productDetails");
 const featuredContainer2 = document.querySelector(".featured2");
-
-
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-
 const id = params.get("id");
-
-const url ="https://rainydays.benjamin-flower.store/wp-json/wc/v3/products/";
+const url = "https://rainydays.benjamin-flower.store/wp-json/wc/v3/products/";
 const key = "consumer_key=ck_d73cda14f037b09c0c4c3ec694d69287d6ce6f33";
 const secret = "consumer_secret=cs_d39990c64d590ccc8f9f6711ea8df93dd0568733";
 const product = `${url}${id}?${key}&${secret}`;
 
 async function getSingleProduct() {
     try {
-      const response = await fetch(product);
-      const json = await response.json();
-  
-      createProductHtml(json);
-      
+        const response = await fetch(product);
+        const json = await response.json();
+        
+        createProductHtml(json);
+        
     } catch (error) {
-      productContainer.innerHTML = 
-        "We could not find this product right now, please try again."
-;
+        productContainer.innerHTML = "We could not find this product right now, please try again.";
     }
-  }
-  getSingleProduct();
-  
-  function createProductHtml(product) {
-      productContainer.innerHTML = `
+}
+getSingleProduct();
+
+function createProductHtml(product) {
+    productContainer.innerHTML = `
       <section class="product-page-main">
 
       <div class="product-image-container">
@@ -86,5 +80,4 @@ async function getSingleProduct() {
 
     </section>
      `;
-
-  }
+}

@@ -1,6 +1,5 @@
 function addToCart() {
-  const alertIcon = (document.querySelector(".alert").style.visibility =
-    "visible");
+  const alertIcon = (document.querySelector(".alert").style.visibility = "visible");
 }
 
 function removeItem() {
@@ -17,11 +16,11 @@ function costChange() {
   const jacketItem = document.querySelector(".item1");
   const totalCost = document.querySelector(".totalcost_sum");
   if ((jacketItem.style.display = "none")) {
-    cost.innerHTML = "0";
+      cost.innerHTML = "0";
   }
 
   if ((jacketItem.style.display = "none")) {
-    totalCost.innerHTML = "0";
+      totalCost.innerHTML = "0";
   }
 }
 

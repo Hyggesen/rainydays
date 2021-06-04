@@ -4,7 +4,6 @@ const secret = "consumer_secret=cs_d39990c64d590ccc8f9f6711ea8df93dd0568733";
 const wooApi =`${url}?${key}&${secret}`;
 
 const productContainer = document.querySelector (".allproducts");
-const featuredContainer = document.querySelector(".featured");
 
 async function getProducts () {
 
@@ -12,7 +11,6 @@ async function getProducts () {
         const response = await fetch(wooApi);
         const getResults =await response.json();
         createHtml(getResults);
-        createFeaturedHtml(getResults);
     }
     catch (error) {
         console.log(error);
@@ -29,7 +27,7 @@ function createHtml (products) {
 
 const productHtml = 
 `<div class="card">
-<img class="product-image-front" src="${product.images[0].src}" />
+<a href="productpage.html?id=${product.id}"><img class="product-image-front" src="${product.images[0].src}" /></a>
 <div class="bottom-card">
      <p class="text">${product.name}</p>
      <p class="title">${product.attributes[0].options[0]}</p>
@@ -45,23 +43,3 @@ const productHtml =
     })
         
     }
-
-
-    function createFeaturedHtml (products) {
-    
-        products.slice(-4).forEach(function(product){
-    
-        featuredContainer.innerHTML +=     `<div class="card">
-        <img class="product-image-front" src="${product.images[0].src}" />
-        <div class="bottom-card">
-             <p class="text">${product.name}</p>
-             <p class="title">${product.attributes[0].options[0]}</p>
-             <p class="price">${product.price}</p> 
-            <a class="details-button" href="productpage.html?id=${product.id}">Details</a>
-        </div>
-        </div>`;
-    
-    
-        })}
-
-        createFeaturedHtml();
