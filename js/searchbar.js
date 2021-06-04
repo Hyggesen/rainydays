@@ -67,6 +67,8 @@ searchBar.addEventListener('keyup', (e) =>{
 
 function createDropDown (jacket) {
 
+    dropDownJacket.innerHTML = "";
+
 for(i=0; i < jacket.length; i++) {
 
 
