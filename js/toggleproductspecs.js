@@ -1,5 +1,5 @@
-var desContent = document.querySelector("");
-var arrowIcon = document.getElementById("");
+var desContent = "";
+var arrowIcon = "";
 
 function openDescription() {
     desContent = document.querySelector(".product-description__content");
@@ -30,4 +30,7 @@ function changeContent() {
         arrowIcon.classList.remove("fa-chevron-down");
         arrowIcon.classList.add("fa-chevron-right");
     }
+    
 }
+
+
