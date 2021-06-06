@@ -20,13 +20,13 @@ function openSizeguide() {
 }
 
 function changeContent() {
-    if (desContent.style.display === "none") {
-        desContent.style.display = "block";
+    if (desContent.style.display == "block") {
+        desContent.style.display = "none";
 
         arrowIcon.classList.remove("fa-chevron-right");
         arrowIcon.classList.add("fa-chevron-down");
     } else {
-        desContent.style.display = "none";
+        desContent.style.display = "block";
         arrowIcon.classList.remove("fa-chevron-down");
         arrowIcon.classList.add("fa-chevron-right");
     }
